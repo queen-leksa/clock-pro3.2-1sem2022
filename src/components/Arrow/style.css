@@ -1,0 +1,23 @@
+.arrow {
+    position: absolute;
+    border-radius: 10px;
+    background-image: linear-gradient(blueviolet, lightblue);
+}
+.arrow-h {
+    width: 20px;
+    height: 100px;
+    top: calc(50% - 90px);
+    transform-origin: center 90px;
+}
+.arrow-m {
+    width: 10px;
+    height: 150px;
+    top: calc(50% - 145px);
+    transform-origin: center 145px;
+}
+.arrow-s {
+    width: 6px;
+    height: 220px;
+    top: calc(50% - 217px);
+    transform-origin: center 217px;
+}

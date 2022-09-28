@@ -1,0 +1,30 @@
+.watch {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 1px dotted;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.watch-nail {
+    width: 4px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #000;
+    position: relative;
+}
+.watch-info {
+    padding: 10px;
+    line-height: 1;
+    border: 1px dotted;
+    width: max-content;
+    position: absolute;
+    bottom: 150px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+    gap: 10px;
+}
