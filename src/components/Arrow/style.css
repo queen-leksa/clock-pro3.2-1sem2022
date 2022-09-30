@@ -2,6 +2,7 @@
     position: absolute;
     border-radius: 10px;
     background-image: linear-gradient(blueviolet, lightblue);
+    z-index: 2;
 }
 .arrow-h {
     width: 20px;

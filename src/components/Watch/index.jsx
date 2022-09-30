@@ -1,16 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import Time from "../Time";
 import Arrow from "../Arrow";
 import "./style.css";
 
 export default () => {
+    const [time, setTime] = useState(new Date());
+    // const rand = (n) => Math.floor(Math.random() * n + 1000000000000);
+    // let time = new Date();
+    setTimeout(function() {
+        setTime(new Date());
+    }, 1000);
     return <div className="watch">
-        <Arrow value="11" type="h" />
-        <Arrow value="50" type="m" />
-        <Arrow value="36" type="s" />
+        <Arrow value={time.getHours()} type="h" />
+        <Arrow value={time.getMinutes()} type="m" />
+        <Arrow value={time.getSeconds()} type="s" />
         <div className="watch-nail"/>
         <div className="watch-info">
-            <Time value="11"/>:<Time value="50"/>:<Time value="36"/>
+            <Time value={time.getHours()}/>:<Time value={time.getMinutes()}/>:<Time value={time.getSeconds()}/>
         </div>
     </div>
 }
